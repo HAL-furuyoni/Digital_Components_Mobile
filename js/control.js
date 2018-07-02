@@ -7,6 +7,9 @@ window.onload=function init_check(){
       document.CB.elements[i].checked = true; // ON・OFFを切り替え
    }
 }
+//----------------------------------------------------------------------------
+//CheckBox
+//----------------------------------------------------------------------------
 function DispFrame(obj,tar){
   if (obj.checked){
     document.getElementById(tar).style.display="block";

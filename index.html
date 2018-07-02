@@ -13,15 +13,15 @@
     </header>
     <!--Spin Spin -->
     <div class="Umb_frame" id="Umb_frame" >
-      <img id="Umb" class="Umb_spin" touchstart="Umb_spin()"
+      <img id="Umb" class="Umb_spin" ontouchend="Umb_spin()"
       src="./images/umbrella_a.png">
       <img id="Umb_chibi" class="Umb_chibi" src="./images/yukihi_a.png">
     </div>
     <!--Hiso Hiso -->
     <div class="Plan_frame" id="Plan_frame" >
-      <img id="Plan1" touchstart="ImageChange(1)" class="Plan_b1"
+      <img id="Plan1" ontouchend="ImageChange(1)" class="Plan_b1"
       src="./images/plan_back.png">
-      <img id="Plan2" touchstart="ImageChange(2)" class="Plan_b2"
+      <img id="Plan2" ontouchend="ImageChange(2)" class="Plan_b2"
       src="./images/plan_back.png">
       <img class="Plan_chibi" src="./images/sd_shinra.png">
     </div>
@@ -35,24 +35,24 @@
       src="./images/raijin_0x.png">
       <img class="FR_index" id="FR_Rindex"
       src="./images/raijin_x0.png">
-      <button class="FR_button"touchstart="CountUp(0);">風神 +1</button>
-      <button class="FR_button"touchstart="CountUp(1);">雷神 +1</button>
-      <button class="FR_button"touchstart="CountDw(0);">風神 -1</button>
-      <button class="FR_button"touchstart="CountDw(1);">雷神 -1</button>
-      <button class="FR_2button"touchstart="CountDouble();">雷神2倍</button>
-      <button class="FR_2button"touchstart="CountReset();">リセット</button>
+      <button class="FR_button"ontouchend="CountUp(0);">風神 +1</button>
+      <button class="FR_button"ontouchend="CountUp(1);">雷神 +1</button>
+      <button class="FR_button"ontouchend="CountDw(0);">風神 -1</button>
+      <button class="FR_button"ontouchend="CountDw(1);">雷神 -1</button>
+      <button class="FR_2button"ontouchend="CountDouble();">雷神2倍</button>
+      <button class="FR_2button"ontouchend="CountReset();">リセット</button>
       <img class="FR_chibi" src="./images/sd_raira.png">
     </div>
     <!-- Check Box -->
     <div class="CB_frame" >
       <form name="CB" action="index.html" method="post">
-        <input type="checkbox" id="Umb_disp" touchstart="DispFrame(this,'Umb_frame')" >
+        <input type="checkbox" id="Umb_disp" onclick="DispFrame(this,'Umb_frame')" >
         <label for="Umb_disp">傘</label>
         <br>
-        <input type="checkbox" id="Plan_disp" touchstart="DispFrame(this,'Plan_frame')">
+        <input type="checkbox" id="Plan_disp" onclick="DispFrame(this,'Plan_frame')">
         <label for="Plan_disp">計略</label>
         <br>
-        <input type="checkbox" id="FR_disp" touchstart="DispFrame(this,'FR_frame')" >
+        <input type="checkbox" id="FR_disp" onclick="DispFrame(this,'FR_frame')" >
         <label for="FR_disp">風神・雷神ゲージ</label>
       </form>
     </div>
