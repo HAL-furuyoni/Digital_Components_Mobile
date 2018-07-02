@@ -1,3 +1,4 @@
 
-images/ai/yukihi_a.ai
-images/ai/yukihi_b.ai
+images/ai/*.ai
+images/Jointed
+images/modified
