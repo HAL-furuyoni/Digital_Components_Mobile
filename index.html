@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/master.css">
+    <script type="text/javascript" src="./js/control.js"> </script>
+    <title>桜降る代に決闘を:デジタルコンポーネント(タッチパネル版)</title>
+  </head>
+  <body>
+    <header>
+      <div>桜降る代に決闘を:デジタルコンポーネント(タッチパネル版)</div>
+    </header>
+    <!--Spin Spin -->
+    <div class="Umb_frame" id="Umb_frame" >
+      <img id="Umb" class="Umb_spin" touchstart="Umb_spin()"
+      src="./images/umbrella_a.png">
+      <img id="Umb_chibi" class="Umb_chibi" src="./images/yukihi_a.png">
+    </div>
+    <!--Hiso Hiso -->
+    <div class="Plan_frame" id="Plan_frame" >
+      <img id="Plan1" touchstart="ImageChange(1)" class="Plan_b1"
+      src="./images/plan_back.png">
+      <img id="Plan2" touchstart="ImageChange(2)" class="Plan_b2"
+      src="./images/plan_back.png">
+      <img class="Plan_chibi" src="./images/sd_shinra.png">
+    </div>
+    <!--Rai Rai Rai! -->
+    <div class="FR_frame" id="FR_frame">
+      <img id="fujin" class="FR_fujin"
+      src="./images/fujin_0x.png">
+      <img class="FR_index" id="FR_Findex"
+      src="./images/fujin_x0.png">
+      <img id="raijin" class="FR_raijin"
+      src="./images/raijin_0x.png">
+      <img class="FR_index" id="FR_Rindex"
+      src="./images/raijin_x0.png">
+      <button class="FR_button"touchstart="CountUp(0);">風神 +1</button>
+      <button class="FR_button"touchstart="CountUp(1);">雷神 +1</button>
+      <button class="FR_button"touchstart="CountDw(0);">風神 -1</button>
+      <button class="FR_button"touchstart="CountDw(1);">雷神 -1</button>
+      <button class="FR_2button"touchstart="CountDouble();">雷神2倍</button>
+      <button class="FR_2button"touchstart="CountReset();">リセット</button>
+      <img class="FR_chibi" src="./images/sd_raira.png">
+    </div>
+    <!-- Check Box -->
+    <div class="CB_frame" >
+      <form name="CB" action="index.html" method="post">
+        <input type="checkbox" id="Umb_disp" touchstart="DispFrame(this,'Umb_frame')" >
+        <label for="Umb_disp">傘</label>
+        <br>
+        <input type="checkbox" id="Plan_disp" touchstart="DispFrame(this,'Plan_frame')">
+        <label for="Plan_disp">計略</label>
+        <br>
+        <input type="checkbox" id="FR_disp" touchstart="DispFrame(this,'FR_frame')" >
+        <label for="FR_disp">風神・雷神ゲージ</label>
+      </form>
+    </div>
+  </body>
+  <footer style="clear:both;">
+    <p>Credit</p>
+    <ul>
+      <li>
+        ふるよにコモンズ©BakaFire、Illustrator:TOKIAME
+      </li>
+      <li><a href="http://bakafire.main.jp/furuyoni/analogindex.html">
+        URL:http://bakafire.main.jp/furuyoni/analogindex.html</a>
+      </li>
+      <li>デジタルコンポーネント作成:HΛL(twitter:@HL41454078)</li>
+    </ul>
+  </footer>
+</html>

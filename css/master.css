@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------------------*/
+/*Common Resource Code*/
+/*--------------------------------------------------------------------------*/
+html{
+  height: 100%;
+}
+body{
+  height: 80%;
+}
+/*--------------------------------------------------------------------------*/
+/*Umbrella*/
+/*--------------------------------------------------------------------------*/
+div.Umb_frame{
+  float: left;
+  width: 10%;
+  height: 70%;
+  border-style: dotted;
+}
+img.Umb_spin{
+  width: 100%;
+}
+img.Umb_chibi{
+  width: 100%;
+}
+/*--------------------------------------------------------------------------*/
+/*Plan*/
+/*--------------------------------------------------------------------------*/
+div.Plan_frame{
+  float: left;
+  width: 15%;
+  height: 70%;
+  border-style: dotted;
+}
+img.Plan_b1{
+  width:48%;
+}
+img.Plan_b2{
+  width:48%;
+  visibility: hidden;
+}
+img.Plan_chibi{
+  width: 100%;
+}
+/*--------------------------------------------------------------------------*/
+/*Fujin&Raijin Gauge*/
+/*--------------------------------------------------------------------------*/
+div.FR_frame{
+  float: left;
+  width: 15%;
+  height: 70%;
+  border-style: dotted;
+}
+img.FR_index{
+  float: left;
+  width: 15%;
+}
+button.FR_button{
+  float: left;
+  width: 50%;
+}
+button.FR_2button{
+  float: center;
+  width: 100%;
+}
+img.FR_fujin,
+img.FR_raijin{
+  float: left;
+  width: 35%;
+}
+img.FR_chibi{
+  width: 100%;
+}
+/*--------------------------------------------------------------------------*/
+/*Smart Phone*/
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	div.Umb_frame,
+	div.Plan_frame,
+	div.FR_frame,
+  div.CB_frame {
+		width: 30vw;
+	}
+}
+/*--------------------------------------------------------------------------*/
+/*CheckBox*/
+/*--------------------------------------------------------------------------*/
+div.CB_frame{
+  clear:both;
+  width: 15%;
+  border-style: dotted;
+}
